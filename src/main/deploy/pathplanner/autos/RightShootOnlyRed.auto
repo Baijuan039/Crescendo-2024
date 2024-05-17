@@ -1,0 +1,61 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 15.72,
+      "y": 6.59
+    },
+    "rotation": 121.6512021852861
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootRun"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeTertiaryDelay"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootStop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeStop"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "RightRedRotate"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ZeroGyro"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "Red",
+  "choreoAuto": false
+}

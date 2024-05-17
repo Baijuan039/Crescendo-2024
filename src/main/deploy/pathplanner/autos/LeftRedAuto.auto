@@ -1,0 +1,109 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 15.694926910538557,
+      "y": 4.496961233580098
+    },
+    "rotation": -121.95436293705139
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootRun"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeTertiaryDelay"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootStop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeStop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeRun"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "LeftRedMain"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeStop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootRun"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeTertiaryDelay"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootStop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeStop"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "LeftRedBack"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ZeroGyro"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "Red",
+  "choreoAuto": false
+}

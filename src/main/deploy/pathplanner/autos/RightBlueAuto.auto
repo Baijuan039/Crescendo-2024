@@ -1,0 +1,123 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.8104536608502588,
+      "y": 4.473539560488536
+    },
+    "rotation": -61.26020470717392
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "sequential",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "ShootRun"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeTertiaryDelay"
+                }
+              },
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 1.0
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "ShootStop"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeStop"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeRun"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "RightBlueMain"
+          }
+        },
+        {
+          "type": "sequential",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeStop"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "ShootRun"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeTertiaryDelay"
+                }
+              },
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 1.0
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "ShootStop"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeStop"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "RightBlueBack"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ZeroGyro"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "Blue",
+  "choreoAuto": false
+}
