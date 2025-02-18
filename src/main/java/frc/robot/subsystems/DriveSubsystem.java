@@ -2,50 +2,49 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // the WPILib BSD license file in the root directory of this project.
 
-// RC Rings Comment
-// RC package is like a folder in a file directory
+// package is like a folder in a file directory
 package frc.robot.subsystems;
 
-/* Rc edu.wpi.first. - libary (set of tools and classes) provided by FIRST Robotics (WPILib) 
-    Rc SlewRateLimiter - class used to control how fast a value changes over time. 
+/* edu.wpi.first. - libary (set of tools and classes) provided by FIRST Robotics (WPILib) 
+    SlewRateLimiter - class used to control how fast a value changes over time. 
       ex. ensures motor speeds change smoothly */
-
 import edu.wpi.first.math.filter.SlewRateLimiter;
 
-//Rc Pose2d - class used to track the location and orientation of a robot in a 2D space
-
+//Pose2d - class used to track the location and orientation of a robot in a 2D space
 import edu.wpi.first.math.geometry.Pose2d;
 
-// Rc Rotation2d - class represents an angle (rotation) in two-dimensional space aka. direction
-
+//Rotation2d - class represents an angle (rotation) in two-dimensional space aka. direction
 import edu.wpi.first.math.geometry.Rotation2d;
 
-//RC ChassisSpeeds - class to rep. linear velocity and angular velocity movement.
-
+//ChassisSpeeds - class to rep. linear velocity and angular velocity movement.
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
 
-// RC SwerveDriveKinematics - calculates how each wheel should move.
-
+//SwerveDriveKinematics - calculates how each wheel should move.
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
 
-/*RC SwerveDriveOdometry - class used to track the robot’s real-time position on the field using wheel encoders and a gyro.
+/* SwerveDriveOdometry - class used to track the robot’s real-time position on the field using wheel encoders and a gyro.
     Encoders (Wheel Sensors) - Measures how much wheel has moved.  
     Gyroscope (Gyro) - Measures the robot's angular position (rotation). */
-
 import edu.wpi.first.math.kinematics.SwerveDriveOdometry;
 
-// Rc SwerveModulePosition - rep. the position of an individual wheel on a robot aka. distance traveled and steering angle
-
+// SwerveModulePosition - rep. the position of an individual wheel on a robot aka. distance traveled and steering angle
 import edu.wpi.first.math.kinematics.SwerveModulePosition;
 
 // SwerveModuleState - rep. the desired position of an individual wheel aka. speed and angle of an individual wheel should do.
-
 import edu.wpi.first.math.kinematics.SwerveModuleState;
+
 import edu.wpi.first.util.WPIUtilJNI;
+
+//DriverStation - manages communication with the FRC Driver Station.
 import edu.wpi.first.wpilibj.DriverStation;
+
+//AutoConstants - used to store constants related to autonomous mode
 import frc.robot.Constants.AutoConstants;
+
 //import edu.wpi.first.wpilibj.ADIS16470_IMU;
 //import edu.wpi.first.wpilibj.ADXRS450_Gyro;
+
+//DriveConstants - Stores drivetrain-related constants 
 import frc.robot.Constants.DriveConstants;
 import frc.utils.SwerveUtils;
 import edu.wpi.first.wpilibj2.command.Command;
